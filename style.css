@@ -392,3 +392,67 @@ h1 span { color: var(--green-700); }
   outline-offset: 4px;
   border-radius: 8px;
 }
+
+/* Susunan hero untuk paparan telefon */
+@media (max-width: 600px) {
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portrait-panel {
+    order: -1;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 28px;
+  }
+
+  .hero-copy {
+    order: 1;
+    width: 100%;
+  }
+}
+
+/* Tajuk khas untuk paparan telefon */
+.hero-heading-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .hero-heading-mobile {
+    display: block;
+    order: -2;
+    width: 100%;
+    margin: 0 0 18px;
+  }
+
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portrait-panel {
+    order: -1;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 28px;
+  }
+
+  .hero-copy {
+    order: 1;
+    width: 100%;
+  }
+
+  .hero-copy > .eyebrow,
+  .hero-copy > .seat-label {
+    display: none;
+  }
+
+  .hero-heading-mobile .eyebrow {
+    margin-bottom: 12px;
+  }
+
+  .hero-heading-mobile .seat-label {
+    margin-bottom: 0;
+  }
+}
